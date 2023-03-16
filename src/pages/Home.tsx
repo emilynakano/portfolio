@@ -3,7 +3,9 @@ export default function Home() {
 	return (
 		<Container>
 			<h1>I DO WHAT WHAT I LOVE AND I LOVE WHAT I DO</h1>
-			<div>Scroll Down</div>
+			<ScrollDown>
+				<h1>Scroll Down</h1>
+			</ScrollDown>
 		</Container>
 	);
 }
@@ -25,10 +27,12 @@ const Container = styled.main`
 		color: ${({theme}) => theme.colors.primary};
 		text-align: center;
 	}
+`;
 
-	div {
-		position: absolute;
-		bottom: 0;
-		color: red;
+const ScrollDown = styled.div`
+	position: absolute;
+	bottom: 10px;
+	h1 {
+		font-size: 1.5em;
 	}
 `;
