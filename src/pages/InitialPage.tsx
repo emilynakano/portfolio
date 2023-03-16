@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-export default function Home() {
+
+export default function InitialPage() {
 	return (
 		<Container>
 			<h1>I DO WHAT WHAT I LOVE AND I LOVE WHAT I DO</h1>
@@ -10,11 +11,10 @@ export default function Home() {
 	);
 }
 
-const Container = styled.main`
+const Container = styled.div`
 	position: relative;
- 	width: 100vw;
+ 	width: 100%;
   height: 100vh;
-	background: ${({theme}) => theme.colors.background};
 
 	display: flex;
 	align-items: center;
