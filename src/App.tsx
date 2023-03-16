@@ -1,8 +1,12 @@
+import {ThemeProvider} from 'styled-components';
+import dark from './assets/theme/dark';
 import Router from './routes';
 
 function App() {
 	return (
-		<Router />
+		<ThemeProvider theme={dark}>
+			<Router />
+		</ThemeProvider>
 	);
 }
 
